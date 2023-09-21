@@ -1,17 +1,17 @@
-import { Button, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import { ROUTES } from "../../constants/routes";
 import ContainerCentered from "../../components/ContainerCentered/ContainerCentered";
 import Screen from "../../components/Screen/Screen";
+import { Button } from "native-base";
 
 const Splash = ({ navigation }) => {
   return (
     <Screen>
       <ContainerCentered>
         <Text style={styles.title}>Splash</Text>
-        <Button
-          title="Go to Home"
-          onPress={() => navigation.navigate(ROUTES.TABS.name)}
-        />
+        <Button onPress={() => navigation.navigate(ROUTES.TABS.name)}>
+          Go to Home
+        </Button>
       </ContainerCentered>
     </Screen>
   );
