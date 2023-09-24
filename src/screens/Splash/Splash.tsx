@@ -22,7 +22,7 @@ const Splash = ({ navigation }) => {
           onPress={() => navigation.navigate(ROUTES.TABS.name)}
         >
           <Text fontSize="lg" color={colors.primary.base}>
-            Έισοδος
+            Είσοδος
           </Text>
         </Button>
       </ContainerCentered>
