@@ -24,17 +24,21 @@ const TabNavigator = () => {
         },
         tabBarActiveTintColor: "tomato",
         tabBarInactiveTintColor: "gray",
+        tabBarShowLabel: false,
       })}
     >
       <Tab.Screen
         name={ROUTES.HOME.name}
         component={Home}
-        options={{ headerShown: false }}
+        options={{ headerShown: false, title: "Αρχική" }}
       />
       <Tab.Screen
         name={ROUTES.BOOKS.name}
         component={Books}
-        options={{ headerShown: false }}
+        options={{
+          headerShown: false,
+          title: "Βιβλία",
+        }}
       />
     </Tab.Navigator>
   );

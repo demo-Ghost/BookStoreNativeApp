@@ -2,9 +2,10 @@ import { Fab, Icon } from "native-base";
 import BarcodeScannerIcon from "../../icons/BarcodeScannerIcon";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-const FabBottom = () => {
+const FabBottom = ({ onPress }) => {
   return (
     <Fab
+      onPress={onPress}
       renderInPortal={false}
       shadow={2}
       size="sm"
