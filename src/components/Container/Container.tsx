@@ -1,7 +1,7 @@
-import React from "react";
 import { StyleSheet, View, ViewStyle } from "react-native";
+import { colors } from "../../styles/colors";
 
-const ContainerCentered = ({
+const Container = ({
   children,
   style,
 }: {
@@ -16,9 +16,8 @@ const ContainerCentered = ({
 const defaultStyles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    backgroundColor: colors.black,
   },
 });
 
-export default ContainerCentered;
+export default Container;
